@@ -3,6 +3,7 @@
 @section('content')
 <h1>Productos</h1>
 <a href="{{ route('productos.create') }}">Crear Producto</a>
+<a href="{{ route('productos.stock-alto') }}">Stock Alto</a>
 <table border="1">
     <tr>
         <th>ID</th>
