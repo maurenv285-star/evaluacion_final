@@ -29,4 +29,11 @@ class ProductoController extends Controller
 
         return redirect()->route('productos.index');
     }
+
+    public function stockAlto()
+{
+    $productos = Producto::where('stock', '>', 5)->get();
+    return view('productos.index', compact('productos'));
+}
+
 }
